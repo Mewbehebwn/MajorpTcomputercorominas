@@ -1,0 +1,368 @@
+<html>
+	<head>
+		<style>
+		
+		
+			.container{
+				
+			background:aquamarine;
+			display:grid;
+			border:5px solid aquamarine;
+			grid-template-rows:1fr 8fr 1fr;
+			font-family:courier;
+			color:cadetblue;
+			font-weight:bold;
+			column-gap:5px;
+			row-gap:5px;
+			
+			}
+			
+			.header{
+				
+			background:azure;
+			font-size:3em;
+			text-align:center;
+			grid-column:span 5;
+			height:125px;
+				
+			}
+			
+			.nav{
+			
+			display:grid;
+			grid-template-columns:1fr;
+			grid-template-rows:100px 100px 100px 100px 100px;
+			background:azure;
+			font-size:1em;
+			text-align:center;
+			flex-direction:column;
+				
+			}
+			
+			.main{
+				
+			background:azure;
+			font-size:2em;
+			text-align:center;
+			grid-column:span 3;
+				
+			}
+			
+			.main video {
+				
+			height:340px;
+			width:340px;
+				
+			}
+			
+			.aside{
+			
+			display:grid;
+			justify-content:space-evenly;
+			grid-template-columns:1fr;
+			grid-template-rows:1fr 1fr 1fr;
+			padding-top:40px;
+			background:azure;
+			font-size:2em;
+			text-align:center;
+				
+			}
+			
+			.aside img {
+			height:150px;
+			width:150px;
+				
+			}
+			
+			.footer{
+				
+			background:azure;
+			font-size:2em;
+			text-align:center;
+			grid-column:span 5;
+			height:75px;
+				
+			}
+			
+			@media only screen and (max-width:680px) {
+				
+			.header{
+				
+			display:grid;
+			grid-column:span 1;
+			background:azure;
+			font-size:2em;
+			text-align:center;
+			grid-column:span 5;
+			height:75px;
+				
+			}
+				
+			.container{
+				
+			background:aquamarine;
+			display:grid;
+			border:5px solid aquamarine;
+			grid-template-rows:1fr;
+			font-family:courier;
+			color:cadetblue;
+			font-weight:bold;
+			column-gap:5px;
+			row-gap:5px;
+			
+			}
+				
+			.main{
+				
+			background:azure;
+			font-size:2em;
+			text-align:center;
+			grid-column:span 4;
+				
+			}
+				
+			.aside{
+			
+			display:grid;
+			grid-column:span 5;
+			grid-row:span 5;
+			background:azure;
+			font-size:2em;
+			text-align:center;
+			display:flex;
+			flex:wrap;
+			justify-content:space-evenly;
+				
+			}
+				
+			}
+			
+			@media only screen and (max-width:500px) {
+				
+			.header{
+				
+			display:grid;
+			grid-column:span 1;
+			background:azure;
+			font-size:1em;
+			text-align:center;
+			grid-column:span 5;
+			height:75px;
+				
+			}
+			
+			.nav{
+			
+			display:grid;
+			grid-column:span 5;
+			grid-row:span 5;
+			background:azure;
+			font-size:1.5em;
+			text-align:center;
+			flex-direction:column;
+			display:flex;
+			flex:wrap;
+				
+			}
+			
+			.container{
+				
+			background:aquamarine;
+			display:grid;
+			border:5px solid aquamarine;
+			grid-template-rows:1fr;
+			font-family:courier;
+			color:cadetblue;
+			font-weight:bold;
+			column-gap:5px;
+			row-gap:5px;
+			
+			}
+				
+			.main{
+				
+			background:azure;
+			font-size:2em;
+			text-align:center;
+			grid-column:span 5;
+				
+			}
+				
+			.aside{
+			
+			display:grid;
+			grid-column:span 5;
+			grid-row:span 5;
+			background:azure;
+			font-size:2em;
+			text-align:center;
+			display:flex;
+			flex:wrap;
+			justify-content:space-evenly;
+				
+			}
+					
+			.aside img {
+			
+			height:100;
+			width:100;
+				
+			}
+				
+			}
+			
+			.footer{
+				
+			background:azure;
+			font-size:1em;
+			text-align:center;
+			grid-column:span 5;
+			height:125px;
+				
+			}
+			
+			@media only screen and (max-width:375px) {
+				
+			.header{
+				
+			display:grid;
+			grid-column:span 1;
+			background:azure;
+			font-size:1em;
+			text-align:center;
+			grid-column:span 5;
+			height:75px;
+				
+			}
+			
+			.nav{
+			
+			display:grid;
+			grid-column:span 5;
+			grid-row:span 5;
+			background:azure;
+			font-size:1em;
+			text-align:center;
+			flex-direction:column;
+			display:flex;
+			flex:wrap;
+				
+			}
+				
+			.main{
+				
+			background:azure;
+			font-size:1em;
+			text-align:center;
+			grid-column:span 5;
+				
+			}
+			
+			.main video {
+				
+			width:150;
+			height:150;
+				
+			}
+				
+			.aside{
+			
+			display:grid;
+			grid-column:span 5;
+			grid-row:span 5;
+			background:azure;
+			font-size:2em;
+			text-align:center;
+			display:flex;
+			flex:wrap;
+			justify-content:space-evenly;
+				
+			}
+					
+			.aside img {
+			
+			height:75;
+			width:75;
+				
+			}
+				
+			}
+			
+			.footer{
+				
+			background:azure;
+			font-size:0.8em;
+			text-align:center;	
+			grid-column:span 5;
+			height:125px;
+				
+			}
+			
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>WEbsite cor</title>
+	</head>	
+<body>
+
+	<div class=container>
+		<div class=header>Website for computer lab monday 7am to 9am in monday of every week in school sy 2023-2024 dbtc Don bosco technical college cebu</div>
+		<div class=nav>
+		
+			<p>LINKS:</p>
+			
+			<a href="Aboutme.html">About Me </a>
+			<a href="skills.html">Skills </a>
+			<a href="talents.html">Talents </a>
+
+			
+		</div>
+		<div class=main>
+			
+			<p> Made by corm</p>
+			
+			<video width="340" height="340" controls>
+				<source src="ong.mp4" type="video/mp4">
+			</video>
+			
+			<p>vMade by corm vvvCtrov </p>
+			
+		</div>
+		<div class=aside>
+			
+		</div>
+		
+	</div>
+
+<div class=footer>
+			<p>© 2023 Sponsored by Ethyl Alcohol Brought you by PIlferring pirates TM and the whole angelus and 3pm prayer The Angel of the Lord declared to Mary: 
+And she conceived of the Holy Spirit.
+
+Hail Mary, full of grace, the Lord is with thee; blessed art thou among women and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of
+our death. Amen.
+
+Behold the handmaid of the Lord: Be it done unto me according to Thy word.
+
+Hail Mary...
+
+And the Word was made Flesh: And dwelt among us.
+
+Hail Mary...
+
+
+Pray for us, O Holy Mother of God, that we may be made worthy of the promises of Christ. 
+
+Let us pray:
+
+Pour forth, we beseech Thee, O Lord, Thy grace into our hearts; that we, to whom the incarnation of Christ, Thy Son, was made known by the message of an angel, may by His Passion and Cross be brought to the glory of His Resurrection, through the same Christ Our Lord.
+
+Amen. 
+ 
+
+'Hail, full of grace, the Lord is with you' (Lk 1: 28)
+
+'Blessed are you among women, 
+and blessed is the fruit of your womb'</p>
+		</div>
+	</div>
+</body>
+</html>
